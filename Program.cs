@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace лалала
+namespace lalalaa
 {
     class Program
     {
@@ -14,7 +14,9 @@ namespace лалала
             Class1 Vasya = new Class1();
             Petya.Birth = new DateTime(2007, 4, 15);
             Vasya.Birth = new DateTime(2008, 1, 1);
-            DateTime.Now
+            System.TimeSpan daysCount = Vasya.Birth.Subtract(Petya.Birth);
+
+            Console.WriteLine(daysCount.ToString());
         }
     }
 }
